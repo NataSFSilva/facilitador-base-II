@@ -1,36 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de planilha</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main">
         <div class="boxes">
             <div class="box">
-                <textarea></textarea>
+                <textarea id="alertas"></textarea>
+            </div>
+            <div class="box">
+                <button onclick="gerarTable()">Gerar</button>
             </div>
             <div class="box">
                 <table>
-                    <tr>
-                        <td>conteúdo da célula</td>
-                        <td>conteúdo da célula</td>
-                        <td>conteúdo da célula</td>
-                    </tr>
-                    <tr>
-                        <td>conteúdo da célula</td>
-                        <td>conteúdo da célula</td>
-                        <td>conteúdo da célula</td>
-                    </tr>
+                    <tbody id="tabela">
+                        <tr>
+                            <td id="cabecalho">Emissor</td>
+                            <td id="cabecalho">Arquivo</td>
+                            <td id="cabecalho">Tamanho do arquivo</td>
+                            <td id="cabecalho">Received</td>
+                            <td id="cabecalho">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>Ambev</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>BBNK</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>Bene</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>BitCaptal</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>Caju</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>Caju</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>Mozper</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>Rapyd</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>Zoop_iFood</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                        <tr>
+                            <td>ZroBank</td>
+                            <td>Arquivo</td>
+                            <td>Tamanho do arquivo</td>
+                            <td id="hora">Received</td>
+                            <td id="hora">Processed</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
 </body>
+
 </html>
+<script src="script.js"></script>
