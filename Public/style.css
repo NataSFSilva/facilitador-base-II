@@ -1,7 +1,39 @@
-table, th, td {
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+table,
+th,
+td {
   border: 1px solid black;
 }
 
 #cabecalho {
   padding: 0px 10px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+}
+
+#alertas {
+  resize: none;
+  height: 100%;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
 }
